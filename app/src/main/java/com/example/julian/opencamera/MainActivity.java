@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         imgClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Cierra la actividad.
-                finish();
+        //Cierra la actividad.
+        finish();
             }
         });
     }
@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 225);
         } else {
             Log.i("Mensaje", "Tienes permiso para usar la camara.");
+        }
+    }
+    public void closeCamera(View view){
+        if(cameraView != null){
+            FrameLayout camera_view = findViewById(R.id.camera_view);
+            camera_view.removeAllViews();
         }
     }
 

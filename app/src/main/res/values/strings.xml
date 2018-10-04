@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">OpenCamera</string>
     <string name="open_camera">Open Camera</string>
+    <string name="close_camera">Close Camera</string>
 </resources>
